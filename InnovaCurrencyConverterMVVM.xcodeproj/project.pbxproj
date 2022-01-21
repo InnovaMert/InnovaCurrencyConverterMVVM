@@ -3,16 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20F6A3807BA1A7FD8AB58FD1 /* Pods_InnovaCurrencyConverterMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A7F872815C1CD6E97383C8 /* Pods_InnovaCurrencyConverterMVVM.framework */; };
 		422FE4C3279B446E00626B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422FE4C2279B446E00626B56 /* AppDelegate.swift */; };
 		422FE4C5279B446E00626B56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422FE4C4279B446E00626B56 /* SceneDelegate.swift */; };
 		422FE4C7279B446E00626B56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422FE4C6279B446E00626B56 /* ViewController.swift */; };
 		422FE4CA279B446E00626B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422FE4C8279B446E00626B56 /* Main.storyboard */; };
 		422FE4CC279B446F00626B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422FE4CB279B446F00626B56 /* Assets.xcassets */; };
 		422FE4CF279B446F00626B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422FE4CD279B446F00626B56 /* LaunchScreen.storyboard */; };
+		422FE4DB279B44F800626B56 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422FE4DA279B44F800626B56 /* CurrencyModel.swift */; };
+		422FE4DD279B450B00626B56 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422FE4DC279B450B00626B56 /* APICaller.swift */; };
+		422FE4DF279B4ADF00626B56 /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422FE4DE279B4ADF00626B56 /* CurrencyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,12 @@
 		422FE4CB279B446F00626B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		422FE4CE279B446F00626B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		422FE4D0279B446F00626B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		422FE4DA279B44F800626B56 /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
+		422FE4DC279B450B00626B56 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		422FE4DE279B4ADF00626B56 /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
+		918E140F2F51EAA825269DA0 /* Pods-InnovaCurrencyConverterMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InnovaCurrencyConverterMVVM.release.xcconfig"; path = "Target Support Files/Pods-InnovaCurrencyConverterMVVM/Pods-InnovaCurrencyConverterMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		F2CE7D5B596040D6D370D026 /* Pods-InnovaCurrencyConverterMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InnovaCurrencyConverterMVVM.debug.xcconfig"; path = "Target Support Files/Pods-InnovaCurrencyConverterMVVM/Pods-InnovaCurrencyConverterMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		F8A7F872815C1CD6E97383C8 /* Pods_InnovaCurrencyConverterMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InnovaCurrencyConverterMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F6A3807BA1A7FD8AB58FD1 /* Pods_InnovaCurrencyConverterMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39279CDECB3C7A344A078634 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2CE7D5B596040D6D370D026 /* Pods-InnovaCurrencyConverterMVVM.debug.xcconfig */,
+				918E140F2F51EAA825269DA0 /* Pods-InnovaCurrencyConverterMVVM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		422FE4B6279B446E00626B56 = {
 			isa = PBXGroup;
 			children = (
 				422FE4C1279B446E00626B56 /* InnovaCurrencyConverterMVVM */,
 				422FE4C0279B446E00626B56 /* Products */,
+				39279CDECB3C7A344A078634 /* Pods */,
+				DF45FA6D099725453E92D42F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +78,58 @@
 		422FE4C1279B446E00626B56 /* InnovaCurrencyConverterMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				422FE4D9279B44E500626B56 /* View */,
+				422FE4D8279B44D700626B56 /* Network */,
+				422FE4D7279B44D100626B56 /* ViewModel */,
+				422FE4D6279B44CD00626B56 /* Model */,
+				422FE4D0279B446F00626B56 /* Info.plist */,
+			);
+			path = InnovaCurrencyConverterMVVM;
+			sourceTree = "<group>";
+		};
+		422FE4D6279B44CD00626B56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				422FE4DA279B44F800626B56 /* CurrencyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		422FE4D7279B44D100626B56 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				422FE4DE279B4ADF00626B56 /* CurrencyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		422FE4D8279B44D700626B56 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				422FE4DC279B450B00626B56 /* APICaller.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		422FE4D9279B44E500626B56 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				422FE4C2279B446E00626B56 /* AppDelegate.swift */,
 				422FE4C4279B446E00626B56 /* SceneDelegate.swift */,
 				422FE4C6279B446E00626B56 /* ViewController.swift */,
 				422FE4C8279B446E00626B56 /* Main.storyboard */,
 				422FE4CB279B446F00626B56 /* Assets.xcassets */,
 				422FE4CD279B446F00626B56 /* LaunchScreen.storyboard */,
-				422FE4D0279B446F00626B56 /* Info.plist */,
 			);
-			path = InnovaCurrencyConverterMVVM;
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF45FA6D099725453E92D42F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8A7F872815C1CD6E97383C8 /* Pods_InnovaCurrencyConverterMVVM.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 422FE4D3279B446F00626B56 /* Build configuration list for PBXNativeTarget "InnovaCurrencyConverterMVVM" */;
 			buildPhases = (
+				07D078D895BA9AC8D53013A6 /* [CP] Check Pods Manifest.lock */,
 				422FE4BB279B446E00626B56 /* Sources */,
 				422FE4BC279B446E00626B56 /* Frameworks */,
 				422FE4BD279B446E00626B56 /* Resources */,
+				F9E893259BFC6B4A2850E443 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +199,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07D078D895BA9AC8D53013A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InnovaCurrencyConverterMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9E893259BFC6B4A2850E443 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InnovaCurrencyConverterMVVM/Pods-InnovaCurrencyConverterMVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InnovaCurrencyConverterMVVM/Pods-InnovaCurrencyConverterMVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InnovaCurrencyConverterMVVM/Pods-InnovaCurrencyConverterMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		422FE4BB279B446E00626B56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				422FE4C7279B446E00626B56 /* ViewController.swift in Sources */,
+				422FE4DF279B4ADF00626B56 /* CurrencyViewModel.swift in Sources */,
 				422FE4C3279B446E00626B56 /* AppDelegate.swift in Sources */,
+				422FE4DB279B44F800626B56 /* CurrencyModel.swift in Sources */,
+				422FE4DD279B450B00626B56 /* APICaller.swift in Sources */,
 				422FE4C5279B446E00626B56 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +395,7 @@
 		};
 		422FE4D4279B446F00626B56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2CE7D5B596040D6D370D026 /* Pods-InnovaCurrencyConverterMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +414,7 @@
 		};
 		422FE4D5279B446F00626B56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 918E140F2F51EAA825269DA0 /* Pods-InnovaCurrencyConverterMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
